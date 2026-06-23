@@ -1497,6 +1497,16 @@
             min-height: 0;
         }
 
+        @media (max-width: 767px) {
+            #quiz-cards-overlay .cards-container {
+                grid-template-columns: 1fr;
+            }
+
+            #quiz-cards-overlay .card {
+                margin-bottom: 0;
+            }
+        }
+
         /* Uniform scrollbar styling for all card scrollable areas */
         .card-content,
         .question-card,
