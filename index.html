@@ -1508,25 +1508,30 @@
                 width: 100% !important;
                 min-width: 0 !important;
                 height: auto !important;
+                min-height: auto !important;
+                overflow: visible !important;
                 margin-bottom: 0;
             }
 
             #quiz-cards-overlay .content-card {
                 padding: 12px 10px;
                 height: auto;
-                max-height: 100vh;
+                max-height: none;
             }
 
             #quiz-cards-overlay .description-card .card-content,
-            #quiz-cards-overlay .question-card .question-scroll-area {
+            #quiz-cards-overlay .question-card .question-scroll-area,
+            #quiz-cards-overlay .question-card .card-content {
                 overflow: visible !important;
                 max-height: none !important;
                 height: auto !important;
+                flex: none !important;
                 padding-right: 0 !important;
             }
 
             #quiz-cards-overlay .question-card {
                 min-height: auto !important;
+                height: auto !important;
             }
         }
 
