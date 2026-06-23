@@ -22,19 +22,26 @@
         :root {
             --sky-blue: #A9DDF5;
             --soft-cloud-blue: #DDF4FF;
-            --light-grass-green: #B8D936;
-            --fresh-green: #8FBE27;
-            --deep-leaf-green: #5F8F22;
-            --soft-yellow: #F4C542;
-            --cream: #F7EFC8;
-            --wood-blue: #7BA8E6;
-            --warm-wood: var(--wood-blue);
-            --dark-outline: #3A3328;
+            --light-blue: #D9EEFF;
+            --pastel-blue: #AED2FF;
+            --accent-blue: #5F8AE1;
+            --mid-blue: #7BA8E6;
+            --deep-blue: #2E4F9B;
+            --border-blue: #5C7BCC;
+            --dark-text: #203050;
+            --dark-outline: var(--dark-text);
             --soft-white: #F7FBFF;
+            --soft-grey: #E7F2FF;
 
-            --wood: var(--warm-wood);
-            --paper: var(--cream);
-            --gold: var(--soft-yellow);
+            --wood: var(--border-blue);
+            --paper: var(--soft-white);
+            --gold: var(--accent-blue);
+            --cream: var(--soft-white);
+            --soft-yellow: var(--accent-blue);
+            --fresh-green: var(--pastel-blue);
+            --deep-leaf-green: var(--border-blue);
+            --light-grass-green: var(--soft-grey);
+            --warm-wood: var(--mid-blue);
         }
 
         body {
@@ -62,8 +69,8 @@
         }
 
         .content-card {
-            background: var(--paper);
-            border: clamp(5px, 1.5vw, 8px) solid var(--wood);
+            background: var(--soft-white);
+            border: clamp(5px, 1.5vw, 8px) solid var(--border-blue);
             border-radius: clamp(12px, 3vw, 20px);
             padding: clamp(16px, 2vw, 20px);
             max-width: min(95vw, 760px);
@@ -101,8 +108,8 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: stretch;
-                background: linear-gradient(180deg, var(--soft-cloud-blue) 0%, var(--cream) 50%);
-                border-left: 4px solid var(--soft-yellow);
+                background: linear-gradient(180deg, var(--soft-cloud-blue) 0%, var(--soft-white) 55%);
+                border-left: 4px solid var(--border-blue);
                 border-bottom: none;
                 padding: 14px 14px;
                 gap: 12px;
@@ -126,7 +133,7 @@
                 justify-content: center;
                 gap: 16px;
                 padding: 18px 24px 18px 28px;
-                background: linear-gradient(135deg, var(--soft-yellow) 0%, var(--soft-cloud-blue) 50%, var(--cream) 100%);
+                background: linear-gradient(135deg, var(--accent-blue) 0%, var(--soft-cloud-blue) 52%, var(--soft-white) 100%);
                 overflow: visible;
                 position: relative;
             }
@@ -141,8 +148,8 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: stretch;
-                background: linear-gradient(180deg, var(--soft-cloud-blue) 0%, var(--cream) 50%);
-                border-left: 4px solid var(--soft-yellow);
+                background: linear-gradient(180deg, var(--soft-cloud-blue) 0%, var(--soft-white) 55%);
+                border-left: 4px solid var(--border-blue);
                 padding: 16px 14px;
                 gap: 12px;
                 overflow-y: visible;
@@ -218,9 +225,9 @@
                 align-items: center;
                 padding: 12px;
                 gap: 8px;
-                background: rgba(255, 255, 255, 0.92);
+                background: rgba(247, 251, 255, 0.92);
                 border-radius: 16px;
-                border: 1px solid rgba(78, 46, 30, 0.12);
+                border: 1px solid rgba(32, 70, 141, 0.12);
                 box-shadow: 0 6px 14px rgba(0,0,0,0.08);
                 width: 100%;
             }
@@ -259,9 +266,9 @@
                 display: grid;
                 gap: 6px;
                 padding: 10px;
-                background: rgba(255, 255, 255, 0.92);
+                background: rgba(247, 251, 255, 0.92);
                 border-radius: 14px;
-                border: 1px solid rgba(78, 46, 30, 0.12);
+                border: 1px solid rgba(32, 70, 141, 0.12);
                 box-shadow: 0 5px 10px rgba(0,0,0,0.05);
                 margin: 0;
                 text-align: center;
@@ -322,9 +329,9 @@
                 display: grid;
                 gap: 4px;
                 padding: 10px;
-                background: rgba(255, 255, 255, 0.92);
+                background: rgba(247, 251, 255, 0.92);
                 border-radius: 12px;
-                border: 1px solid rgba(78, 46, 30, 0.12);
+                border: 1px solid rgba(32, 70, 141, 0.12);
                 box-shadow: 0 4px 10px rgba(0,0,0,0.04);
                 text-align: center;
                 width: 100%;
@@ -364,10 +371,10 @@
                 height: auto !important;
                 position: relative !important;
                 border-right: none !important;
-                border-bottom: 4px solid var(--soft-yellow);
+                border-bottom: 4px solid var(--accent-blue);
                 padding: 16px;
                 gap: 12px;
-                background: linear-gradient(180deg, var(--cream), var(--cream)) !important;
+                background: linear-gradient(180deg, var(--soft-cloud-blue), var(--soft-white)) !important;
                 overflow-y: auto !important;
             }
 
@@ -383,9 +390,9 @@
                 width: 100%;
                 height: auto;
                 padding: 16px;
-                background: linear-gradient(180deg, var(--soft-cloud-blue), var(--cream));
+                background: linear-gradient(180deg, var(--soft-cloud-blue), var(--soft-white));
                 border-left: none;
-                border-top: 4px solid var(--soft-yellow);
+                border-top: 4px solid var(--accent-blue);
                 order: 3;
             }
 
@@ -463,8 +470,8 @@
         }
 
         .content-card {
-            background: var(--paper);
-            border: clamp(5px, 1.5vw, 8px) solid var(--wood);
+            background: var(--soft-white);
+            border: clamp(5px, 1.5vw, 8px) solid var(--border-blue);
             border-radius: clamp(12px, 3vw, 20px);
             padding: clamp(16px, 2vw, 20px);
             max-width: min(95vw, 760px);
@@ -509,17 +516,17 @@
         }
 
         .btn-gold {
-            background: linear-gradient(135deg, var(--fresh-green) 0%, var(--soft-yellow) 100%);
+            background: linear-gradient(135deg, var(--mid-blue) 0%, var(--accent-blue) 100%);
             color: var(--dark-outline);
             padding: clamp(12px, 2.5vw, 15px) clamp(20px, 5vw, 40px);
             border-radius: clamp(8px, 2vw, 12px);
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: clamp(1px, 0.5vw, 2px);
-            border: clamp(1px, 0.3vw, 3px) solid var(--deep-leaf-green);
+            border: clamp(1px, 0.3vw, 3px) solid var(--border-blue);
             cursor: pointer;
             transition: all 0.2s;
-            box-shadow: 0 clamp(3px, 1vw, 5px) 0 rgba(58,51,40,0.35);
+            box-shadow: 0 clamp(3px, 1vw, 5px) 0 rgba(32, 70, 141, 0.2);
             font-size: clamp(13px, 2.5vw, 16px);
             width: 100%;
             margin-top: clamp(8px, 2vw, 10px);
@@ -527,18 +534,18 @@
 
         .btn-gold:hover { 
             transform: translateY(-1px); 
-            background: linear-gradient(135deg, var(--soft-yellow) 0%, var(--cream) 100%);
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--soft-white) 100%);
         }
 
         .btn-gold:active { 
             transform: translateY(2px); 
-            box-shadow: 0 1px 0 rgba(58,51,40,0.35); 
+            box-shadow: 0 1px 0 rgba(32, 70, 141, 0.18); 
         }
 
         #input-player-name {
             width: 100%;
             padding: clamp(12px, 2.5vw, 18px) clamp(15px, 3vw, 25px);
-            border: clamp(2px, 0.5vw, 4px) solid var(--deep-leaf-green);
+            border: clamp(2px, 0.5vw, 4px) solid var(--border-blue);
             border-radius: 8px;
             font-size: clamp(14px, 2vw, 20px);
             font-weight: bold;
@@ -559,7 +566,7 @@
         #input-school-name {
             width: 100%;
             padding: clamp(12px, 2.5vw, 18px) clamp(15px, 3vw, 25px);
-            border: clamp(2px, 0.5vw, 4px) solid var(--deep-leaf-green);
+            border: clamp(2px, 0.5vw, 4px) solid var(--border-blue);
             border-radius: 8px;
             font-size: clamp(14px, 2vw, 20px);
             font-weight: bold;
@@ -586,7 +593,7 @@
         }
 
         .screen-char-title {
-            color: var(--soft-yellow);
+            color: var(--accent-blue);
             font-family: 'Fredoka One', sans-serif;
             font-size: clamp(20px, 6vw, 30px);
             font-weight: 900;
@@ -627,8 +634,8 @@
         }
 
         .status-bar {
-            background: var(--paper);
-            border-bottom: 5px solid var(--wood);
+            background: var(--soft-white);
+            border-bottom: 5px solid var(--border-blue);
             padding: clamp(14px, 2vw, 18px) clamp(10px, 3vw, 30px);
             display: flex;
             flex-direction: column;
@@ -671,10 +678,10 @@
             justify-content: center;
             align-items: center;
             gap: clamp(10px, 1.5vw, 14px);
-            background: linear-gradient(135deg, var(--fresh-green) 0%, var(--soft-yellow) 100%);
+            background: linear-gradient(135deg, var(--mid-blue) 0%, var(--accent-blue) 100%);
             padding: clamp(16px, 2vw, 20px);
             border-radius: 24px;
-            border: 1px solid var(--dark-outline);
+            border: 1px solid rgba(32, 70, 141, 0.12);
             width: 100%;
             box-shadow: 0 12px 26px rgba(0,0,0,0.12);
         }
@@ -706,15 +713,15 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 0.08em;
-            color: var(--soft-yellow);
+            color: var(--accent-blue);
             margin: 8px 0 0 0;
         }
 
         .status-card {
-            background: rgba(255,255,255,0.95);
+            background: rgba(247, 251, 255, 0.95);
             border-radius: 20px;
             border: 1px solid rgba(78,46,30,0.16);
-            box-shadow: 0 10px 22px rgba(0,0,0,0.09);
+            box-shadow: 0 10px 22px rgba(32, 70, 141, 0.08);
             padding: clamp(12px, 1.2vw, 16px);
             display: flex;
             flex-direction: column;
@@ -769,7 +776,7 @@
             justify-content: center;
             padding: clamp(12px, 2vw, 24px);
             gap: clamp(24px, 3vw, 32px);
-            background: linear-gradient(135deg, var(--soft-yellow) 0%, var(--soft-cloud-blue) 50%, var(--cream) 100%);
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--soft-cloud-blue) 52%, var(--soft-white) 100%);
             position: relative;
             width: 100%;
         }
@@ -841,11 +848,11 @@
         }
 
         .panel-card {
-            background: rgba(255, 255, 255, 0.92);
-            border: 2px solid var(--soft-yellow);
+            background: rgba(247, 251, 255, 0.92);
+            border: 2px solid var(--accent-blue);
             border-radius: 14px;
             padding: 10px;
-            box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 14px rgba(32, 70, 141, 0.08);
             display: flex;
             flex-direction: column;
             gap: 6px;
@@ -886,7 +893,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 6px;
-            background: rgba(200, 155, 60, 0.1);
+            background: rgba(87, 130, 216, 0.12);
             border-radius: 10px;
             border: 1px solid rgba(200,155,60,0.25);
         }
@@ -904,7 +911,7 @@
         }
 
         .panel-tip-card {
-            background: rgba(255,255,255,0.92);
+            background: rgba(247, 251, 255, 0.92);
         }
 
         .center-image {
@@ -946,7 +953,7 @@
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: repeat(5, 1fr);
             gap: 10px;
-            background: var(--cream);
+            background: var(--soft-white);
             padding: 16px;
             border-radius: 16px;
             width: min(820px, 90vw);
@@ -954,7 +961,7 @@
             height: auto;
             aspect-ratio: 1 / 1;
             position: relative;
-            border: 4px solid var(--soft-yellow);
+            border: 4px solid var(--accent-blue);
             box-shadow: inset 0 0 16px rgba(0,0,0,0.25), 0 8px 24px rgba(0,0,0,0.4);
         }
 
@@ -967,7 +974,7 @@
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
-            border: 2px solid var(--soft-yellow);
+            border: 2px solid var(--accent-blue);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -987,7 +994,7 @@
         }
 
         .tile.active-target {
-            border-color: var(--soft-yellow);
+            border-color: var(--accent-blue);
             animation: pulse 1.8s ease-in-out infinite;
             box-shadow: 0 0 18px rgba(244, 197, 66, 0.65), inset 0 0 18px rgba(244, 197, 66, 0.25);
         }
@@ -1024,7 +1031,7 @@
             background-size: contain;
             background-position: center center;
             background-repeat: no-repeat;
-            border: 3px solid var(--soft-yellow);
+            border: 3px solid var(--accent-blue);
             box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 5px rgba(0,0,0,0.2);
             border-radius: 4px;
         }
@@ -1104,7 +1111,7 @@
         }
 
         .btn-dir {
-            background: linear-gradient(135deg, var(--fresh-green) 0%, var(--soft-yellow) 100%);
+            background: linear-gradient(135deg, var(--mid-blue) 0%, var(--accent-blue) 100%);
             border: clamp(2px, 0.5vw, 3px) solid var(--dark-outline);
             color: white;
             width: clamp(55px, 12vw, 65px);
@@ -1115,14 +1122,14 @@
             justify-content: center;
             font-weight: 900;
             cursor: pointer;
-            box-shadow: 0 clamp(3px, 1vw, 5px) 0 rgba(58,51,40,0.35);
+            box-shadow: 0 clamp(3px, 1vw, 5px) 0 rgba(32, 70, 141, 0.2);
             transition: all 0.15s;
             font-size: clamp(18px, 4vw, 22px);
             padding: 0;
         }
 
         .btn-dir:hover:not(:disabled) {
-            background: linear-gradient(135deg, var(--soft-yellow) 0%, var(--cream) 100%);
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--soft-white) 100%);
             transform: translateY(-2px);
             box-shadow: 0 clamp(4px, 1.2vw, 7px) 0 var(--dark-outline);
         }
@@ -1135,13 +1142,13 @@
         .btn-dir:disabled {
             opacity: 0.3;
             cursor: not-allowed;
-            background: linear-gradient(135deg, #888 0%, #666 100%);
+            background: linear-gradient(135deg, #B0C9F7 0%, #8AABDF 100%);
         }
 
         .btn-dir.active {
-            background: linear-gradient(135deg, var(--cream) 0%, var(--soft-cloud-blue) 100%);
-            border-color: var(--soft-yellow);
-            box-shadow: 0 0 15px rgba(255, 203, 153, 0.6), 0 clamp(3px, 1vw, 5px) 0 var(--soft-yellow);
+            background: linear-gradient(135deg, var(--soft-white) 0%, var(--light-blue) 100%);
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 15px rgba(93, 132, 219, 0.45), 0 clamp(3px, 1vw, 5px) 0 var(--accent-blue);
         }
 
         .btn-dir span { 
@@ -1271,8 +1278,8 @@
         }
 
         .quiz-opt-btn {
-            background: linear-gradient(135deg, var(--cream) 0%, #D4EEF7 100%);
-            border: clamp(2px, 0.5vw, 3px) solid var(--deep-leaf-green);
+            background: linear-gradient(135deg, var(--soft-white) 0%, var(--light-blue) 100%);
+            border: clamp(2px, 0.5vw, 3px) solid var(--border-blue);
             padding: clamp(12px, 2.5vw, 16px) clamp(10px, 2vw, 15px);
             border-radius: clamp(8px, 2vw, 10px);
             text-align: left;
@@ -1292,15 +1299,15 @@
             font-size: 10px !important;
             padding: 8px 12px !important;
             font-weight: 400 !important;
-            border: 1px solid var(--deep-leaf-green) !important;
+            border: 1px solid var(--border-blue) !important;
             border-radius: 12px !important;
             line-height: 1.4 !important;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
         }
 
         .quiz-opt-btn:hover {
-            border-color: var(--cream);
-            background: linear-gradient(135deg, #FFF0F7 0%, #FFDDE8 100%);
+            border-color: var(--soft-white);
+            background: linear-gradient(135deg, var(--soft-white) 0%, var(--light-blue) 100%);
         }
 
         .quiz-opt-btn:active {
@@ -1376,8 +1383,8 @@
         }
 
         .card {
-            background: linear-gradient(135deg, var(--soft-cloud-blue) 0%, var(--cream) 100%);
-            border: 3px solid var(--soft-yellow);
+            background: linear-gradient(135deg, var(--soft-cloud-blue) 0%, var(--soft-white) 100%);
+            border: 3px solid var(--accent-blue);
             border-radius: 15px;
             padding: 14px;
             text-align: left;
@@ -1482,7 +1489,7 @@
             width: 100%;
             padding: clamp(8px, 1.2vw, 10px) clamp(10px, 1.4vw, 12px);
             border-radius: 12px;
-            border: 1px solid var(--deep-leaf-green);
+            border: 1px solid var(--border-blue);
             font-weight: 400;
             text-align: left;
             line-height: 1.4;
@@ -1492,7 +1499,7 @@
 
         .question-card .quiz-options button:hover,
         #quiz-cards-overlay .quiz-opt-btn:hover {
-            border-color: var(--soft-yellow);
+            border-color: var(--accent-blue);
         }
 
         .cards-container {
@@ -1622,7 +1629,7 @@
 
         .description-card,
         .question-card {
-            background: linear-gradient(135deg, var(--soft-yellow) 0%, var(--cream) 100%);
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--soft-white) 100%);
         }
 
         .quiz-options {
@@ -1636,8 +1643,8 @@
             width: 100%;
             margin: 0;
             padding: 10px;
-            background: rgba(255,255,255,0.92);
-            border: 1px solid var(--soft-yellow);
+            background: rgba(247, 251, 255, 0.92);
+            border: 1px solid var(--accent-blue);
             border-radius: 8px;
             cursor: pointer;
             font-size: 10px;
@@ -1691,11 +1698,11 @@
         }
 
         #adventure-overlay::-webkit-scrollbar-track {
-            background: rgba(200, 155, 60, 0.1);
+            background: rgba(87, 130, 216, 0.12);
         }
 
         #adventure-overlay::-webkit-scrollbar-thumb {
-            background: var(--soft-yellow);
+            background: var(--accent-blue);
             border-radius: 4px;
         }
 
@@ -1704,9 +1711,9 @@
             max-width: 1260px;
             height: min(96vh, 760px);
             max-height: 760px;
-            background: linear-gradient(135deg, var(--cream) 0%, var(--cream) 50%);
+            background: linear-gradient(135deg, var(--soft-white) 0%, var(--soft-white) 50%);
             border-radius: 24px;
-            border: 3px solid var(--soft-yellow);
+            border: 3px solid var(--accent-blue);
             padding: clamp(10px, 0.95vw, 14px);
             display: grid;
             grid-template-columns: minmax(250px, 27%) minmax(0, 73%);
@@ -1899,7 +1906,7 @@
             background-repeat: no-repeat;
             border-radius: 18px;
             overflow: hidden;
-            border: 4px solid rgba(200, 155, 60, 0.4);
+            border: 4px solid rgba(87, 130, 216, 0.4);
             box-shadow: inset 0 0 24px rgba(0,0,0,0.18), 0 12px 32px rgba(0,0,0,0.15);
             flex-shrink: 0;
             align-self: stretch;
@@ -1923,7 +1930,7 @@
             position: absolute;
             width: clamp(36px, 8vw, 44px);
             height: clamp(36px, 8vw, 44px);
-            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--mid-blue) 100%);
             color: #3f3f46;
             border-radius: 18px;
             display: flex;
@@ -2123,8 +2130,8 @@
         .char-card {
             width: 100%;
             max-width: 220px;
-            background: linear-gradient(135deg, rgba(126, 200, 227, 0.2) 0%, rgba(255, 182, 217, 0.2) 100%);
-            border: clamp(1.5px, 0.5vw, 2px) solid var(--deep-leaf-green);
+            background: linear-gradient(135deg, rgba(141, 188, 255, 0.2) 0%, rgba(210, 232, 255, 0.2) 100%);
+            border: clamp(1.5px, 0.5vw, 2px) solid var(--border-blue);
             padding: clamp(18px, 2.5vw, 24px);
             border-radius: 18px;
             text-align: center;
@@ -2141,8 +2148,8 @@
         }
 
         .char-card:hover {
-            border-color: var(--cream);
-            background: linear-gradient(135deg, rgba(255, 182, 217, 0.3) 0%, rgba(126, 200, 227, 0.3) 100%);
+            border-color: var(--soft-white);
+            background: linear-gradient(135deg, rgba(141, 188, 255, 0.3) 0%, rgba(126, 200, 227, 0.3) 100%);
         }
 
         .char-svg {
@@ -2162,7 +2169,7 @@
 
         .char-name {
             font-weight: 900;
-            color: var(--soft-yellow);
+            color: var(--accent-blue);
             text-transform: uppercase;
             font-size: clamp(10px, 2.4vw, 13px);
             line-height: 1.2;
@@ -2207,7 +2214,7 @@
 
         .home-card {
             background: white;
-            border: clamp(3px, 0.8vw, 6px) solid var(--deep-leaf-green);
+            border: clamp(3px, 0.8vw, 6px) solid var(--border-blue);
             border-radius: clamp(12px, 2vw, 20px);
             padding: clamp(16px, 3vw, 20px);
             text-align: center;
@@ -2228,8 +2235,8 @@
         .home-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-            border-color: var(--cream);
-            background: linear-gradient(135deg, rgba(255, 182, 217, 0.1) 0%, rgba(126, 200, 227, 0.1) 100%);
+            border-color: var(--soft-white);
+            background: linear-gradient(135deg, rgba(141, 188, 255, 0.1) 0%, rgba(126, 200, 227, 0.1) 100%);
         }
 
         .home-card:active {
@@ -2306,8 +2313,8 @@
 
         /* Kotak Form Nama & Sekolah */
         #screen-player-info .content-card {
-            background: var(--cream);
-            border: clamp(5px, 0.8vw, 8px) solid var(--soft-yellow);
+            background: var(--soft-white);
+            border: clamp(5px, 0.8vw, 8px) solid var(--accent-blue);
             border-radius: clamp(18px, 2.5vw, 25px);
             padding: clamp(14px, 1.2vw, 20px);
             max-width: 640px;
@@ -2337,7 +2344,7 @@
         #screen-player-info input {
             width: min(86vw, 560px);
             padding: clamp(12px, 1.4vw, 16px);
-            border: clamp(3px, 0.4vw, 5px) solid var(--deep-leaf-green);
+            border: clamp(3px, 0.4vw, 5px) solid var(--border-blue);
             border-radius: clamp(12px, 1.6vw, 14px);
             background-color: rgba(255,255,255,0.95);
             color: var(--dark-outline);
@@ -2350,7 +2357,7 @@
 
         #screen-player-info input:focus {
             outline: none;
-            box-shadow: 0 0 16px rgba(255,182,217,0.45);
+            box-shadow: 0 0 16px rgba(87, 130, 216, 0.35);
             background-color: rgba(255,255,255,1);
         }
 
@@ -2363,7 +2370,7 @@
         }
 
         #screen-player-info .btn-gold:hover {
-            background: linear-gradient(135deg, var(--soft-yellow) 0%, var(--cream) 100%);
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--soft-white) 100%);
         }
 
         /* Halaman Petunjuk Penggunaan */
@@ -2409,7 +2416,7 @@
         }
 
         #screen-instructions .btn-gold:hover {
-            background: linear-gradient(135deg, var(--soft-yellow) 0%, var(--cream) 100%);
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--soft-white) 100%);
         }
 
         /* Modal untuk Input Foto dan Tulisan */
@@ -2459,7 +2466,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: clamp(20px, 3vw, 30px);
-            border-bottom: 2px solid var(--deep-leaf-green);
+            border-bottom: 2px solid var(--border-blue);
             padding-bottom: clamp(15px, 2vw, 20px);
         }
 
@@ -2485,7 +2492,7 @@
         }
 
         .info-modal-close:hover {
-            color: var(--cream);
+            color: var(--soft-white);
             transform: scale(1.1);
         }
 
@@ -2502,23 +2509,23 @@
         }
 
         .photo-upload-box {
-            border: 2px dashed var(--deep-leaf-green);
+            border: 2px dashed var(--border-blue);
             border-radius: 12px;
             padding: clamp(20px, 3vw, 30px);
             text-align: center;
-            background: var(--cream);
+            background: var(--soft-white);
             cursor: pointer;
             transition: all 0.3s ease;
         }
 
         .photo-upload-box:hover {
-            border-color: var(--cream);
-            background: #FFF0F7;
+            border-color: var(--soft-white);
+            background: var(--soft-white);
         }
 
         .photo-upload-box.has-file {
             border-color: var(--dark-outline);
-            background: var(--cream);
+            background: var(--soft-white);
         }
 
         #photo-input {
@@ -2544,7 +2551,7 @@
         #text-input {
             width: 100%;
             padding: clamp(12px, 2vw, 15px);
-            border: 2px solid var(--deep-leaf-green);
+            border: 2px solid var(--border-blue);
             border-radius: 8px;
             font-size: clamp(13px, 2.5vw, 16px);
             font-family: 'Poppins', sans-serif;
@@ -2556,9 +2563,9 @@
 
         #text-input:focus {
             outline: none;
-            border-color: var(--cream);
-            box-shadow: 0 0 15px rgba(255, 182, 217, 0.3);
-            background-color: #FFF0F7;
+            border-color: var(--soft-white);
+            box-shadow: 0 0 15px rgba(141, 188, 255, 0.3);
+            background-color: var(--soft-white);
         }
 
         .info-modal-buttons {
@@ -2582,7 +2589,7 @@
 
         .btn-cancel {
             background: #E0E0E0;
-            color: #666;
+            color: var(--dark-text);
         }
 
         .btn-cancel:hover {
@@ -2591,14 +2598,14 @@
         }
 
         .btn-submit {
-            background: linear-gradient(135deg, var(--fresh-green) 0%, var(--soft-yellow) 100%);
+            background: linear-gradient(135deg, var(--mid-blue) 0%, var(--accent-blue) 100%);
             color: white;
-            border: 2px solid var(--deep-leaf-green);
+            border: 2px solid var(--border-blue);
             box-shadow: 0 4px 12px rgba(126, 200, 227, 0.3);
         }
 
         .btn-submit:hover {
-            background: linear-gradient(135deg, var(--soft-yellow) 0%, var(--cream) 100%);
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--soft-white) 100%);
             transform: translateY(-2px);
             box-shadow: 0 6px 18px rgba(126, 200, 227, 0.5);
         }
@@ -2702,7 +2709,7 @@
         }
 
         #end-message {
-            color: #666;
+            color: var(--dark-text);
             font-weight: 500;
             font-size: clamp(14px, 3vw, 18px);
             margin-bottom: clamp(15px, 3vw, 30px);
@@ -2726,7 +2733,7 @@
                 width: min(92vw, 420px);
                 max-width: 420px;
                 padding: clamp(15px, 4vw, 24px);
-                border: clamp(5px, 1.5vw, 8px) solid var(--wood);
+                border: clamp(5px, 1.5vw, 8px) solid var(--border-blue);
                 margin: 0 auto;
             }
 
@@ -2823,7 +2830,7 @@
                 max-width: 160px;
                 padding: clamp(12px, 3vw, 16px);
                 min-height: clamp(170px, 26vw, 210px);
-                border: clamp(1px, 0.4vw, 2px) solid #a78bfa;
+                border: clamp(1px, 0.4vw, 2px) solid var(--accent-blue);
                 overflow: hidden;
             }
 
@@ -2883,7 +2890,7 @@
                 width: min(92vw, 360px);
                 max-width: 360px;
                 padding: clamp(12px, 3vw, 18px);
-                border: clamp(4px, 1vw, 6px) solid var(--wood);
+                border: clamp(4px, 1vw, 6px) solid var(--border-blue);
                 max-height: 90vh;
                 margin: 0 auto;
             }
@@ -2976,7 +2983,7 @@
                 width: clamp(50px, 11vw, 60px);
                 height: clamp(50px, 11vw, 60px);
                 font-size: clamp(12px, 3vw, 16px);
-                box-shadow: 0 clamp(2px, 0.5vw, 3px) 0 #c41e3a;
+                box-shadow: 0 clamp(2px, 0.5vw, 3px) 0 rgba(32, 70, 141, 0.18);
             }
 
             .monopoly-board {
@@ -2984,14 +2991,14 @@
                 height: min(75vh, 100vw);
                 padding: clamp(4px, 1vw, 6px);
                 gap: clamp(2px, 0.4vw, 3px);
-                border: clamp(3px, 0.8vw, 4px) solid var(--gold);
+                border: clamp(3px, 0.8vw, 4px) solid var(--accent-blue);
             }
 
             .tile {
                 padding: clamp(2px, 0.4vw, 3px) clamp(2px, 0.3vw, 3px);
                 min-height: clamp(35px, 7vw, 45px);
                 font-size: clamp(7px, 1vw, 9px);
-                border: clamp(1.5px, 0.3vw, 2px) solid #8b5a2b;
+                border: clamp(1.5px, 0.3vw, 2px) solid var(--border-blue);
             }
 
             .tile span {
@@ -3014,7 +3021,7 @@
             .char-card {
                 width: min(90vw, 180px);
                 padding: clamp(10px, 2.5vw, 14px);
-                border: clamp(1px, 0.3vw, 1.5px) solid #a78bfa;
+                border: clamp(1px, 0.3vw, 1.5px) solid var(--accent-blue);
                 min-height: clamp(160px, 26vw, 200px);
                 justify-content: center;
                 overflow: hidden;
@@ -3333,7 +3340,7 @@
         <div class="content-card">
             <h2 id="region-title" style="font-size: clamp(32px, 8vw, 48px); margin-bottom: clamp(20px, 4vw, 30px);">📍 WILAYAH BARU</h2>
             <img id="region-image" src="" alt="Region" class="preview-image" style="max-height: clamp(200px, 40vh, 400px); margin-bottom: clamp(20px, 3vw, 30px); border-radius: 12px; transition: all 0.5s ease;">
-            <div id="region-info-box" style="background: rgba(200, 155, 60, 0.1); border: 2px solid var(--soft-yellow); border-radius: 16px; padding: clamp(16px, 3vw, 24px); margin-bottom: clamp(20px, 3vw, 30px);">
+            <div id="region-info-box" style="background: rgba(87, 130, 216, 0.12); border: 2px solid var(--accent-blue); border-radius: 16px; padding: clamp(16px, 3vw, 24px); margin-bottom: clamp(20px, 3vw, 30px);">
                 <p id="region-name" style="font-size: clamp(20px, 4vw, 28px); font-weight: 900; color: var(--dark-outline); margin: 0; margin-bottom: 10px;"></p>
                 <p id="region-description" style="font-size: clamp(13px, 2.5vw, 16px); color: var(--dark-outline); margin: 0; line-height: 1.5;"></p>
             </div>
@@ -3457,12 +3464,12 @@
 
             <div class="form-group">
                 <label for="player-name-field">Nama Pemain:</label>
-                <input type="text" id="player-name-field" class="btn-gold" placeholder="Masukkan nama Anda..." style="background: white; color: var(--dark-outline); border: clamp(1px, 0.3vw, 3px) solid var(--deep-leaf-green); box-shadow: none; padding: clamp(8px, 2vw, 16px); text-align: left;">
+                <input type="text" id="player-name-field" class="btn-gold" placeholder="Masukkan nama Anda..." style="background: white; color: var(--dark-outline); border: clamp(1px, 0.3vw, 3px) solid var(--border-blue); box-shadow: none; padding: clamp(8px, 2vw, 16px); text-align: left;">
             </div>
 
             <div class="form-group">
                 <label for="school-name-field">Nama Sekolah:</label>
-                <input type="text" id="school-name-field" class="btn-gold" placeholder="Masukkan nama sekolah..." style="background: white; color: var(--dark-outline); border: clamp(1px, 0.3vw, 3px) solid var(--deep-leaf-green); box-shadow: none; padding: clamp(8px, 2vw, 16px); text-align: left;">
+                <input type="text" id="school-name-field" class="btn-gold" placeholder="Masukkan nama sekolah..." style="background: white; color: var(--dark-outline); border: clamp(1px, 0.3vw, 3px) solid var(--border-blue); box-shadow: none; padding: clamp(8px, 2vw, 16px); text-align: left;">
             </div>
 
             <div class="form-group">
@@ -3474,7 +3481,7 @@
                 <input type="file" id="photo-input" accept="image/*">
                 <div class="photo-preview">
                     <img id="photo-preview-img" src="" alt="Preview">
-                    <button type="button" onclick="clearPhoto()" style="background: var(--cream); color: white; border: none; padding: clamp(6px, 1.5vw, 12px) clamp(12px, 3vw, 24px); border-radius: clamp(4px, 1vw, 8px); cursor: pointer; font-weight: 600;">Hapus Foto</button>
+                    <button type="button" onclick="clearPhoto()" style="background: var(--soft-white); color: white; border: none; padding: clamp(6px, 1.5vw, 12px) clamp(12px, 3vw, 24px); border-radius: clamp(4px, 1vw, 8px); cursor: pointer; font-weight: 600;">Hapus Foto</button>
                 </div>
             </div>
 
