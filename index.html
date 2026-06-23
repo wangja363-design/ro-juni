@@ -1507,6 +1507,7 @@
             #quiz-cards-overlay .card {
                 width: 100% !important;
                 min-width: 0 !important;
+                height: auto !important;
                 margin-bottom: 0;
             }
 
@@ -1514,6 +1515,18 @@
                 padding: 12px 10px;
                 height: auto;
                 max-height: 100vh;
+            }
+
+            #quiz-cards-overlay .description-card .card-content,
+            #quiz-cards-overlay .question-card .question-scroll-area {
+                overflow: visible !important;
+                max-height: none !important;
+                height: auto !important;
+                padding-right: 0 !important;
+            }
+
+            #quiz-cards-overlay .question-card {
+                min-height: auto !important;
             }
         }
 
