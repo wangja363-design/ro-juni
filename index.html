@@ -1499,11 +1499,21 @@
 
         @media (max-width: 767px) {
             #quiz-cards-overlay .cards-container {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr !important;
+                grid-auto-rows: auto !important;
+                grid-auto-flow: row !important;
             }
 
             #quiz-cards-overlay .card {
+                width: 100% !important;
+                min-width: 0 !important;
                 margin-bottom: 0;
+            }
+
+            #quiz-cards-overlay .content-card {
+                padding: 12px 10px;
+                height: auto;
+                max-height: 100vh;
             }
         }
 
