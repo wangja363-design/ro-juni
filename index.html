@@ -1842,13 +1842,13 @@
 
         .adventure-player {
             position: absolute;
-            width: clamp(48px, 12vw, 64px);
-            height: clamp(56px, 14vw, 72px);
+            width: clamp(56px, 14vw, 72px);
+            height: clamp(64px, 16vw, 80px);
             left: 50%;
-            bottom: 15%;
+            bottom: 18%;
             transform: translateX(-50%);
             transition: none;
-            font-size: clamp(32px, 7vw, 40px);
+            font-size: clamp(40px, 8vw, 48px);
             z-index: 10;
         }
 
@@ -4278,7 +4278,7 @@
 
             const player = document.getElementById('adventure-player');
             player.style.left = '50%';
-            player.style.bottom = '12%';
+            player.style.bottom = '18%';
             setPlayerAvatar();
             // pastikan token papan tersembunyi saat mini-game berjalan
             hideBoardToken();
