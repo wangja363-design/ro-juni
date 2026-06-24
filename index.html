@@ -1817,11 +1817,11 @@
         }
 
         .adventure-mini-image {
-            width: clamp(48px, 6vw, 68px);
-            height: clamp(48px, 6vw, 68px);
+            width: clamp(72px, 10vw, 140px);
+            height: clamp(72px, 10vw, 140px);
             border-radius: 12px;
             object-fit: cover;
-            border: 1px solid rgba(76, 35, 17, 0.16);
+            border: 2px solid var(--border-strong);
             background: #fff;
             flex: 0 0 auto;
             display: block;
@@ -1893,7 +1893,10 @@
         }
 
         #adventure-region-name {
-            display: none !important;
+            display: block;
+            font-weight: 900;
+            color: var(--dark-text);
+            margin-top: 6px;
         }
 
         /* Game Stage */
