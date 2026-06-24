@@ -26,13 +26,13 @@
             --pastel-blue: #D7EFFE;
             --accent-blue: #BFDFF9; /* softer accent for highlights */
             --mid-blue: #B0D7FB;    /* gentle mid tone */
-            --deep-blue: #203050;   /* navy for text only */
-            --border-blue: #C6E1FB; /* very soft border (base) */
-            --border-strong: #9BC6F3; /* stronger border for hierarchy */
+            --deep-blue: #102A43;   /* darker navy for headings */
+            --border-blue: #3F7DD8; /* medium blue for subtle borders */
+            --border-strong: #1E3A5F; /* strong navy for consistent borders */
             --border-width: clamp(3px, 0.8vw, 4px);
             --card-bg-tint: #F7FBFF; /* slight blue-white tint for cards */
             --card-shadow: rgba(93,140,210,0.12);
-            --dark-text: #0F2A45;   /* navy for readable text */
+            --dark-text: #102A43;   /* navy for readable text */
             --dark-outline: var(--dark-text);
             --soft-white: #FFFFFF;
             --soft-grey: #F2F8FF;
@@ -376,7 +376,7 @@
                 height: auto !important;
                 position: relative !important;
                 border-right: none !important;
-                border-bottom: 4px solid var(--accent-blue);
+                border-bottom: 4px solid var(--border-strong);
                 padding: 16px;
                 gap: 12px;
                 background: linear-gradient(180deg, var(--soft-cloud-blue), var(--soft-white)) !important;
@@ -397,7 +397,7 @@
                 padding: 16px;
                 background: linear-gradient(180deg, var(--soft-cloud-blue), var(--soft-white));
                 border-left: none;
-                border-top: 4px solid var(--accent-blue);
+                border-top: 4px solid var(--border-strong);
                 order: 3;
             }
 
@@ -718,7 +718,7 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 0.08em;
-            color: var(--accent-blue);
+            color: var(--dark-text);
             margin: 8px 0 0 0;
         }
 
@@ -999,7 +999,7 @@
         }
 
         .tile.active-target {
-            border-color: var(--accent-blue);
+            border-color: var(--border-strong);
             animation: pulse 1.8s ease-in-out infinite;
             box-shadow: 0 0 18px rgba(244, 197, 66, 0.65), inset 0 0 18px rgba(244, 197, 66, 0.25);
         }
@@ -1036,7 +1036,7 @@
             background-size: contain;
             background-position: center center;
             background-repeat: no-repeat;
-            border: 3px solid var(--accent-blue);
+            border: 3px solid var(--border-strong);
             box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 5px rgba(0,0,0,0.2);
             border-radius: 4px;
         }
@@ -1152,7 +1152,7 @@
 
         .btn-dir.active {
             background: linear-gradient(135deg, var(--soft-white) 0%, var(--light-blue) 100%);
-            border-color: var(--accent-blue);
+            border-color: var(--border-strong);
             box-shadow: 0 0 15px rgba(93, 132, 219, 0.45), 0 clamp(3px, 1vw, 5px) 0 var(--accent-blue);
         }
 
@@ -1504,7 +1504,7 @@
 
         .question-card .quiz-options button:hover,
         #quiz-cards-overlay .quiz-opt-btn:hover {
-            border-color: var(--accent-blue);
+            border-color: var(--border-strong);
         }
 
         .cards-container {
@@ -1712,14 +1712,14 @@
             border-radius: 4px;
         }
 
-        .adventure-container {
+            .adventure-container {
             width: min(98vw, 1260px);
             max-width: 1260px;
             height: min(96vh, 760px);
             max-height: 760px;
             background: linear-gradient(135deg, var(--soft-white) 0%, var(--soft-white) 50%);
             border-radius: 24px;
-            border: 3px solid var(--accent-blue);
+            border: 3px solid var(--border-strong);
             padding: clamp(10px, 0.95vw, 14px);
             display: grid;
             grid-template-columns: minmax(250px, 27%) minmax(0, 73%);
@@ -3013,7 +3013,7 @@
                 height: min(75vh, 100vw);
                 padding: clamp(4px, 1vw, 6px);
                 gap: clamp(2px, 0.4vw, 3px);
-                border: clamp(3px, 0.8vw, 4px) solid var(--accent-blue);
+                border: clamp(3px, 0.8vw, 4px) solid var(--border-strong);
             }
 
             .tile {
@@ -3166,7 +3166,7 @@
             .quiz-opt-btn {
                 padding: clamp(10px, 1.8vw, 12px) clamp(8px, 1.5vw, 10px);
                 font-size: clamp(11px, 2vw, 14px);
-                border: clamp(1.5px, 0.3vw, 2px) solid #667eea;
+                border: clamp(1.5px, 0.3vw, 2px) solid var(--border-strong);
             }
 
             .center-title {
